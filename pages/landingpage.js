@@ -26,7 +26,7 @@ const Landing = () => {
           </div>
         </div>
 
-        <div className="col-xxl-6 col-xl-4 col-lg-6">
+        <div className=" col-xl-4">
           <div className="card2">
             <div className="card2-header">
               <h4 className="card-title">Top Stories</h4>

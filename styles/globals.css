@@ -25,13 +25,12 @@ a {
   margin-bottom: 20px;
   margin-left: -9%;
   background-size: cover;
-
 }
 
 .card-image {
   width: 100%;
   height: 100%;
-  background-image: url('https://hips.hearstapps.com/hmg-prod/images/a225176-large-1669661289.jpeg?crop=1xw:0.8438350468702752xh;center,top&resize=2048:*');
+  background-image: url("https://hips.hearstapps.com/hmg-prod/images/a225176-large-1669661289.jpeg?crop=1xw:0.8438350468702752xh;center,top&resize=2048:*");
   background-size: cover;
   background: "rgba(0, 0, 0, 0.5)";
   background-position: center;
@@ -39,7 +38,6 @@ a {
   opacity: 50;
   color: #fff;
   opacity: 100%;
-
 }
 
 .card-text {
@@ -53,10 +51,8 @@ a {
   padding: 20px;
 }
 
-
 .update-card {
   background-color: #f0f0f0;
-  
 }
 
 .card-content {
@@ -69,8 +65,8 @@ a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   padding: 20px;
- margin-right: -90px;
- height: 400px;
+  margin-right: -90px;
+  height: 425px;
 }
 
 .card2-header {
@@ -108,10 +104,48 @@ a {
 .unpaid-content h5 {
   font-weight: bold;
 }
-h2 {
+
+.footer {
+  background-color: #fff;
+  color:#4a2c2a ;
+  padding: 30px 0;
+}
+
+.footer-logo img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 20%;
+}
+
+.footer-text h5,
+.footer-text h4 {
+  color: #4a2c2a ;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-text ul li {
   margin-bottom: 10px;
 }
 
+.footer-text ul li a {
+  color: #4a2c2a ;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-text ul li a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
 
 * {
   box-sizing: border-box;
