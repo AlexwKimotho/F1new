@@ -4,7 +4,7 @@ const Standings = () => {
   return (
     <div className="row m-4">
       <div className="col-xl-5 ">
-        <div className="card2"style={{ height: '300px' }}>
+        <div className="card2"style={{ height: '250px' }}>
           <div className="card2-header">
             <h4 className="card-title">Stats</h4>
           </div>
@@ -43,45 +43,35 @@ const Standings = () => {
           </div>
         </div>
       </div>
-      <div className=" col-xl-2 offset-xl-1">
-        <div className="card2">
-          <div className="card2-header">
-            <h4 className="card-title">WC Standings</h4>
-            <div className="unpaid-content">
-              <ul>
-                <li>
-                  <p className="mb-0">August 20, 2015</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="card2-header">
-            <h6 className="card-title">
-              Vettel will do anything to 'annoy mercedes
-            </h6>
-          </div>
-          <div className="card2-header">
-            <h6 className="card-title">
-              Renault continued to work hard during summer break
-            </h6>
-          </div>
-          <div className="card2-header">
-            <h6 className="card-title">
-              A lap Spa-Francorchamps onboard with Rosberg
-            </h6>
-          </div>
-          <div className="card2-header">
-            <h6 className="card-title">
-              Clampdown on starts 'step in the right direction' -
-            </h6>
-          </div>
-          <div className="card2-header">
-            <h6 className="card-title">
-              Ferrari re-signs Kimi Raikkonen for 2016
-            </h6>
-          </div>
+      <div className="col-xl-2 offset-xl-1">
+  <div className="card2">
+    <div className="card2-header">
+      <h4 className="card-title">WC Standings</h4>
+     
+    </div>
+    <div className="card2-body">
+      <div className="row">
+        <div className="col-12">
+          <h6 className="card-title">Driver: Lewis Hamilton</h6>
+          <p>Car: Mercedes</p>
+          <p>Points: 273</p>
         </div>
+        <div className="col-12">
+          <h6 className="card-title">Driver: Max Verstappen</h6>
+          <p>Car: Red Bull Racing</p>
+          <p>Points: 262</p>
+        </div>
+        <div className="col-12">
+          <h6 className="card-title">Driver: Valtteri Bottas</h6>
+          <p>Car: Mercedes</p>
+          <p>Points: 226</p>
+        </div>
+       
       </div>
+    </div>
+  </div>
+</div>
+
 
       <div className=" col-xl-2 offset-xl-1 ">
         <div className="card2">
