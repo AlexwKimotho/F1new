@@ -10,11 +10,6 @@ const Navbar = () => {
     padding: '10px 20px'
   };
 
-  const logoStyle = {
-    height: '50px', 
-    marginRight: '10px'
-  };
-
   const buttonStyle = {
     backgroundColor: 'transparent',
     border: 'none',

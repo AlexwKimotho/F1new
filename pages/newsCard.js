@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 const NewsCard = ({ title, image, description }) => (
-  <div className="col-md-3 mb-4">
-    <div className="card2 h-200">
+  <div className="col-md-3 h-700 mb-4">
+    <div className="card2 h-700">
       <img src={image} className="card-img-top" alt={title} />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
