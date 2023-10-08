@@ -1,50 +1,118 @@
-import Link from 'next/link';
+import React from 'react';
 
-const NewsCard = ({ title, image, description }) => (
-  <div className="col-md-3 h-700 mb-4">
-    <div className="card2 h-700">
-      <img src={image} className="card-img-top" alt={title} />
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
+const News = () => {
+    return (
+        <div className="row m-4 ">
+       <div className="col-xl-5 p-2" style={{ marginTop: "-150px" }}>
+        <div className="card2"style={{ height: '450px' }}>
+          <div className="card2-header">
+            <h4 className="card-title">News, Opinion And Analysis</h4>
+          </div>
+          <div className="card-body">
+            <div className="row">
+              <div className="col-xl-4">
+                <div className="stat-widget d-flex align-items-center">
+                  <div className="widget-icon ">
+                    <span>
+                      <img
+                        src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
+                        alt="First Image"
+                        className="img-fluid" // Added class to make the image fluid
+                      />
+                      <br/>
+                      <strong> Ex-F1racer Jarno Trulli Steps down from racing in Formula E </strong>
+                    </span>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div className="col-xl-4">
+                <div className="stat-widget d-flex align-items-center">
+                  <div className="widget-icon ">
+                    <span>
+                      <img
+                        src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
+                        alt="First Image"
+                        className="img-fluid" // Added class to make the image fluid
+                      />
+                      <br/>
+                      <strong> Ex-F1racer Jarno Trulli Steps down from racing in Formula E </strong>
+                    </span>
+                  </div>
+                  
+                </div>
+              </div>
+              <div className="col-xl-4">
+                <div className="stat-widget d-flex align-items-center">
+                  <div className="widget-icon ">
+                    <span>
+                      <img
+                        src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
+                        alt="First Image"
+                        className="img-fluid" // Added class to make the image fluid
+                      />
+                      <br/>
+                      <strong> Ex-F1racer Jarno Trulli Steps down from racing in Formula E </strong>
+                    </span>
+                  </div>
+                  
+                </div>
+              </div>
+              <div className="col-xl-4">
+                <div className="stat-widget d-flex align-items-center">
+                  <div className="widget-icon ">
+                    <span>
+                      <img
+                        src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
+                        alt="First Image"
+                        className="img-fluid" // Added class to make the image fluid
+                      />
+                      <br/>
+                      <strong> Ex-F1racer Jarno Trulli Steps down from racing in Formula E </strong>
+                    </span>
+                  </div>
+                  
+                </div>
+              </div>
+              <div className="col-xl-4">
+                <div className="stat-widget d-flex align-items-center">
+                  <div className="widget-icon ">
+                    <span>
+                      <img
+                        src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
+                        alt="First Image"
+                        className="img-fluid" // Added class to make the image fluid
+                      />
+                      <br/>
+                      <strong> Ex-F1racer Jarno Trulli Steps down from racing in Formula E </strong>
+                    </span>
+                  </div>
+                  
+                </div>
+              </div>
+              <div className="col-xl-4">
+                <div className="stat-widget d-flex align-items-center">
+                  <div className="widget-icon ">
+                    <span>
+                      <img
+                        src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
+                        alt="First Image"
+                        className="img-fluid" // Added class to make the image fluid
+                      />
+                      <br/>
+                      <strong> Ex-F1racer Jarno Trulli Steps down from racing in Formula E </strong>
+                    </span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-);
-
-const BigCard = ({ title, children }) => (
-  <div className="card2 mb-23 col-xl-6">
-    <div className="card-body">
-      <h5 className="card-title">{title}</h5>
-      <div className="row">{children}</div>
-    </div>
-  </div>
-);
-
-const Home = () => {
-  return (
-    <div className="container">
-      <BigCard title="News">
-        <NewsCard
-          title="News Title 1"
-          image="image_url_1.jpg"
-          description="Description for News 1"
-        />
-        <NewsCard
-          title="News Title 2"
-          image="image_url_2.jpg"
-          description="Description for News 2"
-        />
-        <NewsCard
-          title="News Title 3"
-          image="image_url_3.jpg"
-          description="Description for News 3"
-        />
-      </BigCard>
-
-     
-    </div>
-  );
+        </div>
+    );
 };
 
-export default Home;
+export default News;
