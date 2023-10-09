@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Standings = () => {
   const [standings, setStandings] = useState([]);
+  const [teamStandings, setTeamStandings] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -18,6 +19,22 @@ const Standings = () => {
 
         fetchData();
     }, []);
+
+      useEffect(() => {
+      const fetchData = async () => {
+          try {
+              const response = await fetch('http://ergast.com/api/f1/2008/constructorstandings.json?limit=4');
+              const data = await response.json();
+              const constructorStandings = data.MRData.StandingsTable.StandingsLists[0].ConstructorStandings;
+
+              setTeamStandings(constructorStandings);
+          } catch (error) {
+              console.error('Error fetching data:', error);
+          }
+      };
+
+      fetchData();
+  }, []);
 
   return (
     <div className="row m-4">
@@ -80,86 +97,28 @@ const Standings = () => {
             </div>
         </div>
 
+        <div className="col-xl-2 offset-xl-1">
+            <div className="card2">
+                <div className="card2-header">
+                    <h4 className="card-title">Team Standings</h4>
+                </div>
+                <div className="card2-body">
+                    {teamStandings.map((team, index) => (
+                        <div className="card2-header" key={index}>
+                            <div className="d-flex align-items-center">
+                                
+                                <h6 className="card-title">
+                                    {team.Constructor.name}
+                                </h6>
+                                <br/>
+                                <p style={{padding:'10px', marginLeft:'45px'}}>Points: {team.points}</p> 
 
-      <div className=" col-xl-2 offset-xl-1 ">
-        <div className="card2">
-          <div className="card2-header">
-            <h4 className="card-title">Team Standings</h4>
-            
-          </div>
-          <div className="card2-header">
-          <div className="d-flex align-items-center"> 
-                <img
-                    src="https://img.freepik.com/premium-photo/german-flag-germany_469558-1776.jpg"
-                    alt="Profile Picture 1"
-                    className="me-2"
-                    width="40"
-                    height="40"
-                />
-            <h6 className="card-title">
-              Mercedes GP
-            </h6>
-          </div>
-          </div>
-          <div className="card2-header">
-          <div className="d-flex align-items-center"> 
-                <img
-                    src="https://www.flagsandflagpoles.co.uk/cdn/shop/products/ITALY-150-x-75mm-Table-Flag_800x.jpg?v=1626375424"
-                    alt="Profile Picture 1"
-                    className="me-2"
-                    width="40"
-                    height="40"
-                />
-                
-            <h6 className="card-title">
-              Ferrari
-            </h6>
-</div>
-          </div>
-          <div className="card2-header">
-          <div className="d-flex align-items-center"> 
-                <img
-                    src="https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg"
-                    alt="Profile Picture 1"
-                    className="me-2"
-                    width="40"
-                    height="40"
-                />
-            <h6 className="card-title">
-              Williams
-            </h6>
-            </div>
-          </div>
-          <div className="card2-header">
-          <div className="d-flex align-items-center"> 
-                <img
-                    src="https://a-z-animals.com/media/2022/12/iStock-1054401076-1024x683.jpg"
-                    alt="Profile Picture 1"
-                    className="me-2"
-                    width="40"
-                    height="40"
-                />
-            <h6 className="card-title">
-             Redbull Racing
-            </h6>
-          </div>
-          </div>
-          <div className="card2-header">
-            <div className="d-flex align-items-center"> 
-                <img
-                    src="https://cdn.britannica.com/97/1597-050-008F30FA/Flag-India.jpg?w=400&h=235&c=crop"
-                    alt="Profile Picture 1"
-                    className="me-2"
-                    width="40"
-                    height="40"
-                />
-                <h6 className="card-title">
-                    Force india
-                </h6>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
-        </div>
-      </div>
     </div>
   );
 };
