@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Tweet from "./Quote"
 
 const News = () => {
   const [quote, setQuote] = useState('');
