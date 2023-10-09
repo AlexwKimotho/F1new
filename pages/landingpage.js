@@ -26,8 +26,8 @@ const Landing = () => {
           </div>
         </div>
 
-        <div className=" col-xl-4">
-          <div className="card2">
+        <div className=" col-xl-5" style={{marginRight:'-120px'}}>
+          <div className="card2" >
             <div className="card2-header">
               <h4 className="card-title">Top Stories</h4>
               <div className="unpaid-content">
