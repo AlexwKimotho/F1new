@@ -79,6 +79,36 @@ a {
   font-size: 1.5rem;
   margin: 0;
 }
+/* Example of CSS to replicate Twitter card styling */
+.card3 {
+  background-color:  #5cb9f3;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.card3-header {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+blockquote.twitter-tweet {
+  border-left: 3px solid #4a2c2a;
+  padding: 10px;
+  background-color: #5cb9f3;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.twitter-tweet a {
+  color: #4a2c2a;
+  text-decoration: none;
+}
+
+.twitter-tweet a:hover {
+  text-decoration: underline;
+}
 
 .unpaid-content ul {
   list-style-type: none;
