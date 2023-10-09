@@ -1,6 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 
 const Standings = () => {
+  const [standings, setStandings] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('https://ergast.com/api/f1/2008/driverStandings.json?limit=3');
+                const data = await response.json();
+                const driverStandings = data.MRData.StandingsTable.StandingsLists[0].DriverStandings;
+
+                setStandings(driverStandings);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
   return (
     <div className="row m-4">
       <div className="col-xl-5 ">
@@ -43,34 +61,24 @@ const Standings = () => {
           </div>
         </div>
       </div>
-      <div className="col-xl-2 offset-xl-1">
-  <div className="card2">
-    <div className="card2-header">
-      <h4 className="card-title">WC Standings</h4>
-     
-    </div>
-    <div className="card2-body">
-      <div className="row">
-        <div className="col-12">
-          <h6 className="card-title">Driver: Lewis Hamilton</h6>
-          <p>Car: Mercedes</p>
-          <p>Points: 273</p>
+   <div className="col-xl-2 offset-xl-1">
+            <div className="card2">
+                <div className="card2-header">
+                    <h4 className="card-title">WC Standings</h4>
+                </div>
+                <div className="card2-body">
+                    <div className="row">
+                        {standings.map(driver => (
+                            <div className="col-12" key={driver.Driver.driverId}>
+                                <h6 className="card-title">Driver: {driver.Driver.givenName} {driver.Driver.familyName}</h6>
+                                <p>Car: {driver.Constructors[0].name}</p>
+                                <p>Points: {driver.points}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="col-12">
-          <h6 className="card-title">Driver: Max Verstappen</h6>
-          <p>Car: Red Bull Racing</p>
-          <p>Points: 262</p>
-        </div>
-        <div className="col-12">
-          <h6 className="card-title">Driver: Valtteri Bottas</h6>
-          <p>Car: Mercedes</p>
-          <p>Points: 226</p>
-        </div>
-       
-      </div>
-    </div>
-  </div>
-</div>
 
 
       <div className=" col-xl-2 offset-xl-1 ">
