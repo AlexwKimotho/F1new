@@ -2,8 +2,8 @@ import React from "react";
 
 const Landing = () => {
     return (
-<div className="container col-xxl-10 col-xl-10 col-lg-6">
-        <div className="card">
+<div className="container col-xxl-10 col-xl-7 col-lg-6"  >
+        <div className="card" style={{ fontWeight: "Bold", width: '1300px', marginLeft:'-270px'}}>
           <div className="card-image">
             <p style={{ fontWeight: "Bold", margin: "10px", color: "Grey" }}>
               {" "}
