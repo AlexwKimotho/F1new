@@ -52,7 +52,7 @@ const Standings = () => {
                       <img
                         src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
                         alt="First Image"
-                        className="img-fluid" // Added class to make the image fluid
+                        className="img-fluid" 
                       />
                     </span>
                   </div>
@@ -67,7 +67,7 @@ const Standings = () => {
                       <img
                         src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
                         alt="Second Image"
-                        className="img-fluid" // Added class to make the image fluid
+                        className="img-fluid" 
                       />
                     </span>
                   </div>

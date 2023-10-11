@@ -25,7 +25,7 @@ const News = () => {
                       <img
                         src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
                         alt="First Image"
-                        className="img-fluid" // Added class to make the image fluid
+                        className="img-fluid" 
                       />
                       <br/>
                       <strong> Ex-F1racer Jarno Trulli Steps down from racing in Formula E </strong>
@@ -42,7 +42,7 @@ const News = () => {
                       <img
                         src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
                         alt="First Image"
-                        className="img-fluid" // Added class to make the image fluid
+                        className="img-fluid"
                       />
                       <br/>
                       <strong> Nico Rosberg demands action over Pirell F1 tyre blowouts for Monza </strong>
@@ -58,7 +58,7 @@ const News = () => {
                       <img
                         src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
                         alt="First Image"
-                        className="img-fluid" // Added class to make the image fluid
+                        className="img-fluid" 
                       />
                       <br/>
                       <strong> Pirell says F1 teams ignored request for tire limits in 2013 </strong>
@@ -74,7 +74,7 @@ const News = () => {
                       <img
                         src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
                         alt="First Image"
-                        className="img-fluid" // Added class to make the image fluid
+                        className="img-fluid" 
                       />
                       <br/>
                       <strong> McLaren F1 team's Jenson Button calls BelgianGP </strong>
@@ -90,7 +90,7 @@ const News = () => {
                       <img
                         src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
                         alt="First Image"
-                        className="img-fluid" // Added class to make the image fluid
+                        className="img-fluid" 
                       />
                       <br/>
                       <strong> Pierre Galy surprised by Daniel de Jong move before GP2 crash </strong>
@@ -106,7 +106,7 @@ const News = () => {
                       <img
                         src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
                         alt="First Image"
-                        className="img-fluid" // Added class to make the image fluid
+                        className="img-fluid" 
                       />
                       <br/>
                       <strong> Justin Wilson airlifted to hospital after ponoco IndyCar crash </strong>
@@ -122,7 +122,7 @@ const News = () => {
                       <img
                         src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
                         alt="First Image"
-                        className="img-fluid" // Added class to make the image fluid
+                        className="img-fluid" 
                       />
                       <br/>
                       <strong> BTCC suspends one of Rob Austin Racing's TOCA BTCC licences </strong>
@@ -138,7 +138,7 @@ const News = () => {
                       <img
                         src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
                         alt="First Image"
-                        className="img-fluid" // Added class to make the image fluid
+                        className="img-fluid" 
                       />
                       <br/>
                       <strong> FIA forced to clarify Forula 1 radio clampdown ambiguities </strong>
@@ -154,7 +154,7 @@ const News = () => {
                       <img
                         src="https://live-production.wcms.abc-cdn.net.au/ea9071af8e0e3a392578d6f4db435cd1?impolicy=wcms_crop_resize&cropH=1376&cropW=2447&xPos=0&yPos=65&width=862&height=485"
                         alt="First Image"
-                        className="img-fluid" // Added class to make the image fluid
+                        className="img-fluid" 
                       />
                       <br/>
                       <strong> Former Formula 1 team boss and racing driver Guy Liger dies </strong>

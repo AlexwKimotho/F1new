@@ -36,6 +36,10 @@ const Navbar = () => {
         <button style={buttonStyle}>Search</button>
         <button style={buttonStyle}>Tickets</button>
       </div>
+      <div>
+        <button style={buttonStyle}>Login</button>
+        <button style={buttonStyle}>SignUp</button>
+      </div>
     </nav>
   );
 }
